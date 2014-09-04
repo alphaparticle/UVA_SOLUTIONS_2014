@@ -37,7 +37,7 @@ LL rec ( int row ,int col , int dir ){
     	LL b = 1 + ( col - L[row]) + ( R[row]-L[row]) + rec ( row+1 ,R[row],1) ;
     	dp[v] = min ( a , b ) ;
     }    
-   cout << row <<" "<<col<<" "<<dir <<" "<<dp[v] << endl;
+  // cout << row <<" "<<col<<" "<<dir <<" "<<dp[v] << endl;
    if( row == 1)
    dp[v] -= 1 ;
     return dp[v] ;
