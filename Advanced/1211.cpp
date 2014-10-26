@@ -17,7 +17,6 @@ double topdown( int index , int distancewithoutchangingtyre ){
          
          if( index+1 <= n)
          t = min ( t + b + topdown(index+1,checkpoint[index+1]-checkpoint[index]),  topdown(index+1, distancewithoutchangingtyre+ checkpoint[index+1]-checkpoint[index]));   
-   //      cout << index <<" "<<distancewithoutchangingtyre <<" "<<t<<endl;
          return dp[index][distancewithoutchangingtyre] = t;
 	   
    
